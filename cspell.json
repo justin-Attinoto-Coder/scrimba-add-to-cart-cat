@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "Scrimba",
+    "traxmate",
+    "rtdb"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "*.zip"
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.{md,js,ts,html,css,json}",
+      "languageId": "*"
+    }
+  ]
+}
