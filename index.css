@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Rubik', sans-serif;
+  background: #eef0f4;
+  color: #432000;
+  user-select: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+
+.container {
+  width: min(100%, 340px);
+  margin: 24px auto;
+  padding: 24px;
+  background: #fffdf8;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(67, 32, 0, 0.15);
+  text-align: center;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffecc7;
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(1.8rem, 5vw, 2.1rem);
+  color: #432000;
+}
+
+input {
+  width: 100%;
+  background: #eef0f4;
+  border: 2px solid transparent;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #432000;
+}
+
+input:focus-visible {
+  outline: none;
+  border-color: #ac485a;
+}
+
+button {
+  width: 100%;
+  background: #ac485a;
+  color: #fffdf8;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover,
+button:focus-visible {
+  background: #432000;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul li {
+  background: #fffdf8;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  border: 1px solid #ffecc7;
+  box-shadow: 0 2px 8px rgba(67, 32, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+ul li:hover,
+ul li:focus-visible {
+  background: #ffecc7;
+  transform: scale(1.02);
+  outline: none;
+}
+
+.no-items {
+  background: #eef0f4;
+  color: #432000;
+  cursor: default;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background: #432000;
+    color: #fffdf8;
+  }
+
+  .container {
+    background: #5b2d06;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  h1,
+  input,
+  .no-items {
+    color: #fffdf8;
+  }
+
+  input {
+    background: #70411b;
+  }
+
+  ul li {
+    background: #70411b;
+    border-color: #ac485a;
+    color: #fffdf8;
+  }
+
+  ul li:hover,
+  ul li:focus-visible {
+    background: #ac485a;
+  }
+}
