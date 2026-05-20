@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#432000" />
+    <title>Cat Cart</title>
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <img src="https://picsum.photos/id/237/160" alt="Cat shopping mascot" />
+      <h1>Cat Cart</h1>
+      <input
+        id="input-field"
+        type="text"
+        placeholder="e.g. tuna"
+        autocomplete="off"
+        aria-label="Add an item to your cat shopping list"
+      />
+      <button id="add-button" type="button">Add to cart 🛒</button>
+      <ul id="shopping-list" aria-live="polite">
+        <li class="no-items">No items here... yet 🐱</li>
+      </ul>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
